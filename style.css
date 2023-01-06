@@ -1,0 +1,76 @@
+body {
+  display: grid;
+  grid-template-columns: minmax(100vh, 1fr);
+  grid-template-rows: minmax(100vh, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 450px;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  gap: 10px 10px;
+}
+
+.clear {
+  grid-column: 4;
+  background-color: crimson;
+}
+
+button {
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(0, 191, 255);
+  border: 3px solid black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.calculate {
+  background-color: rgb(3, 173, 173);
+}
+
+.display {
+  grid-column: 1 / 4;
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.display span {
+  width: 97%;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.expression-input {
+  font-size: 22px;
+  align-items: flex-start;
+  color: rgb(152, 152, 152);
+}
+
+.calculation-input {
+  font-size: 28px;
+  color: rgb(99, 99, 99);
+}
+
+.opr {
+  background-color: rgb(235, 156, 9);
+}
